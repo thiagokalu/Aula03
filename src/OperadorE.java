@@ -12,7 +12,8 @@ public class OperadorE {
 		System.out.println("Por favor, digite sua senha:");
 		senha = leitor.next();	
 		//Aqui é preciso criar um if que verifique as duas condições para o login ser bem sucedido
-		if (usuario.equals("administrador") && senha.equals("123")) {
+		if (usuario.toLowerCase().equals("administrador") && senha.equals("123")) {
+				/* equalsIgnoreCase  ignora a formatação de caixa */
 			
 			System.out.println("Você é um Administrador com acesso ao sistema"); 
 			
